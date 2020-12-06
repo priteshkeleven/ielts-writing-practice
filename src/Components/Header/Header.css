@@ -1,0 +1,9 @@
+header {
+    display: flex;
+    background: #e2e2e2;
+    justify-content: center;
+}
+
+h2 {
+    margin: 1rem;
+}
