@@ -1,10 +1,11 @@
 import React, {Fragment, useState, useEffect} from 'react';
 import "./MainBody.css";
+import useLocalState from "../../CustomHooks/useLocalState";
 
 const MainBody = () => {
-    const [text, setText] = useState("");
+    const [text, setText] = useLocalState("", "text");
     const [count, setCount] = useState(0);
-    const [radio, setRadio] = useState("task1");
+    const [radio, setRadio] = useLocalState("task1", "radio");
 
     const handleChange = (e) => {
         const {value} = e.target;
